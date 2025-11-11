@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TORTA DJEKOTA | Ingénieur du Son</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans scroll-smooth">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 bg-gray-200 shadow-md flex justify-between items-center px-8 py-4 z-50">
+    <h1 class="text-2xl text-blue-900 font-semibold">TORTA DJEKOTA</h1>
+    <nav class="flex items-center space-x-6">
+      <a href="#accueil" class="px-4 py-2 rounded-lg font-medium text-blue-900 hover:bg-blue-500 hover:text-white transition transform hover:scale-105">Accueil</a>
+      <a href="#apropos" class="px-4 py-2 rounded-lg font-medium text-blue-900 hover:bg-blue-500 hover:text-white transition transform hover:scale-105">À propos</a>
+      <a href="#projets" class="px-4 py-2 rounded-lg font-medium text-blue-900 hover:bg-blue-500 hover:text-white transition transform hover:scale-105">Projets</a>
+      <a href="#contact" class="px-4 py-2 rounded-lg font-medium text-blue-900 hover:bg-blue-500 hover:text-white transition transform hover:scale-105">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ACCUEIL -->
+  <section id="accueil" class="relative h-screen flex flex-col justify-center items-center text-center px-5 bg-gradient-to-tr from-blue-100 to-blue-200 overflow-hidden">
+    <h2 class="text-5xl text-blue-900 font-bold z-10">Ingénieur du Son & DJ</h2>
+    <p class="text-xl text-gray-800 max-w-xl mt-6 mb-8 z-10">Bienvenue sur mon portfolio professionnel. Découvrez mes projets audio, mes prestations en studio et mes performances DJ.</p>
+    <button onclick="document.getElementById('projets').scrollIntoView({behavior:'smooth'})"
+      class="bg-blue-500 text-white font-bold px-8 py-3 rounded-full hover:bg-blue-400 transform hover:scale-105 z-10 transition">Voir mes projets</button>
+
+    <div class="flex flex-wrap justify-center gap-6 mt-12 z-10">
+      <div class="bg-white rounded-2xl p-6 w-64 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition">
+        <h3 class="text-blue-500 text-xl mb-2 font-semibold">Mixage Studio</h3>
+        <p>Mixage et mastering complet pour tous types de productions musicales.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 w-64 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition">
+        <h3 class="text-blue-500 text-xl mb-2 font-semibold">Live DJ</h3>
+        <p>Performances DJ adaptées aux clubs, événements privés et festivals.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 w-64 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition">
+        <h3 class="text-blue-500 text-xl mb-2 font-semibold">Production Audio</h3>
+        <p>Création et arrangement musical sur mesure selon vos besoins.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos" class="py-16 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
+    <h2 class="text-3xl font-bold text-center mb-16">À propos de moi & du studio</h2>
+
+    <div class="flex flex-col md:flex-row items-center gap-10 bg-blue-50 p-10 rounded-2xl shadow-lg mb-12">
+      <div class="w-44 h-44 flex-shrink-0 rounded-full overflow-hidden border-4 border-yellow-400 shadow-md">
+        <img src="images/profil.jpg" alt="Torta Djekota" class="w-full h-full object-cover">
+      </div>
+      <div class="flex-1 text-gray-800">
+        <h3 class="text-2xl font-semibold text-blue-900">Torta Djekota</h3>
+        <h4 class="text-lg font-medium text-yellow-600 mb-4">PDG & Ingénieur du son – Studio Blessing Production</h4>
+        <p class="mb-3">Passionné par la musique depuis mon plus jeune âge, j’ai construit ma carrière autour du son, de la créativité et de l’excellence technique.</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>🎧 Expertise : mixage, mastering, production sur mesure</li>
+          <li>🎵 Spécialité : accompagnement d’artistes & direction de projets sonores</li>
+          <li>💡 Valeurs : passion, professionnalisme, créativité</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row-reverse items-center gap-10 bg-yellow-50 p-10 rounded-2xl shadow-lg">
+      <div class="w-44 h-44 flex-shrink-0 overflow-hidden rounded-2xl border-4 border-blue-500 shadow-md">
+        <img src="images/logo.jpg" alt="Studio Blessing Production" class="w-full h-full object-cover">
+      </div>
+      <div class="flex-1 text-gray-800">
+        <h3 class="text-2xl font-semibold text-blue-900">Studio Blessing Production</h3>
+        <p class="mb-3">Un espace professionnel dédié à la création musicale, combinant technologie moderne et talent local.</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>🎚️ Services : enregistrement, mixage, mastering, direction artistique</li>
+          <li>🚀 Mission : révéler le potentiel sonore et spirituel de chaque artiste</li>
+          <li>✨ Valeurs : excellence, foi, innovation, intégrité artistique</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="py-16 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Mes projets</h2>
+
+    <div class="flex justify-center mb-10 gap-4">
+      <button class="filter-btn active bg-blue-500 text-white px-5 py-2 rounded-full shadow hover:bg-blue-400 transition" data-target="studio-projets">Studio</button>
+      <button class="filter-btn bg-gray-200 text-gray-700 px-5 py-2 rounded-full hover:bg-yellow-100 hover:text-blue-700 transition" data-target="audio-projets">Audio</button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+      <div class="projet bg-blue-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition group">
+        <img src="images/mixage.jpg" alt="Projet Studio 1" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Mixage Studio – Deep Waves</h3>
+          <p class="text-gray-700">Mixage et mastering complet d’un album électro-ambient.</p>
+        </div>
+      </div>
+      <div class="projet bg-yellow-50 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition group">
+        <img src="images/seance.jpg" alt="Projet Audio 1" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Podcast – Son Immersif</h3>
+          <p class="text-gray-700">Enregistrement et mixage de podcasts avec traitement spatial et effets immersifs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 bg-blue-900 text-white">
+    <h2 class="text-3xl font-bold text-center mb-12">Contactez-moi</h2>
+
+    <div class="max-w-3xl mx-auto bg-blue-800 rounded-2xl shadow-lg p-10">
+      <form class="flex flex-col gap-6">
+        <input type="text" placeholder="Nom" class="p-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+        <input type="email" placeholder="Email" class="p-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+        <textarea placeholder="Votre message" rows="6" class="p-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
+        <button type="submit" class="bg-yellow-500 text-blue-900 font-bold px-6 py-3 rounded-full hover:bg-yellow-400 transform hover:scale-105 transition">Envoyer</button>
+      </form>
+    </div>
+
+    <div class="mt-12 text-center space-x-6">
+      <a href="#" class="hover:text-yellow-400 transition">Facebook</a>
+      <a href="#" class="hover:text-yellow-400 transition">Instagram</a>
+      <a href="#" class="hover:text-yellow-400 transition">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-200 text-gray-800 py-6 text-center">
+    <p>&copy; 2025 Torta Djekota | Studio Blessing Production. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
